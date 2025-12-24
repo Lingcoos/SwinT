@@ -279,7 +279,11 @@ def main():
         )
     )
 
-    torch.save(model_ft.state_dict(), "swin_butterfly_model.pth")
+    models_dir = Path("models")
+    models_dir.mkdir(parents=True, exist_ok=True)
+    out_path = models_dir / "swin_butterfly_model.pth"
+    torch.save(model_ft.state_dict(), out_path)
+    print(f"Saved model to {out_path}")
 
 
 if __name__ == "__main__":
