@@ -1,0 +1,2 @@
+top1_accuracy,top3_accuracy,total_samples,correct_predictions,model_path,test_data_path
+96.0,99.0,500,480,models/swin_butterfly_model.pth,datasets/Butterfly-100/test

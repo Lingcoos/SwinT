@@ -1,0 +1,4 @@
+split,num_classes,num_images,min_per_class,max_per_class,median_per_class,mean_per_class,std_per_class,imbalance_ratio
+train,100,12594,100,187,124.5,125.94,15.188034764247808,1.87
+valid,100,500,5,5,5.0,5.0,0.0,1.0
+test,100,500,5,5,5.0,5.0,0.0,1.0

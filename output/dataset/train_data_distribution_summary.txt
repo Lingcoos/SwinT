@@ -1,0 +1,28 @@
+Training set per-class distribution summary
+----------------------------------------
+num_classes: 100
+num_images: 12594
+min_per_class: 100
+max_per_class: 187
+mean_per_class: 125.94
+median_per_class: 124.5
+std_per_class: 15.188034764247808
+imbalance_ratio: 1.87
+
+Quick observations:
+- The dataset is relatively balanced across classes (low relative std).
+- Imbalance ratio is moderate (<2.0).
+
+Top 5 classes by count:
+  MOURNING CLOAK: 187
+  GREEN HAIRSTREAK: 176
+  BROWN ARGUS: 169
+  BROOKES BIRDWING: 165
+  SLEEPY ORANGE: 152
+
+Bottom 5 classes by count:
+  SIXSPOT BURNET MOTH: 100
+  WOOD SATYR: 102
+  MALACHITE: 103
+  CRIMSON PATCH: 103
+  GOLD BANDED: 104
