@@ -141,7 +141,7 @@ def print_confusion_matrix(results_df, class_names, top_n=10):
         true_class = class_names[true_idx]
         row = cm[true_idx][top_classes_idx]
         
-        # 创建分布字符串
+        # create distribution string
         dist_str = ""
         for j, pred_idx in enumerate(top_classes_idx):
             count = cm[true_idx][pred_idx]
@@ -153,11 +153,11 @@ def print_confusion_matrix(results_df, class_names, top_n=10):
     print("-" * 50)
 
 def main():
-    # 设置路径
+    # set paths
     model_path = "models/swin_butterfly_model.pth"
     test_data_dir = "datasets/Butterfly-100/test"
     
-    # 检查路径是否存在
+    # check if paths exist
     if not os.path.exists(model_path):
         print(f"Error: Model file '{model_path}' does not exist!")
         return

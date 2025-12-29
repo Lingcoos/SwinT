@@ -2,6 +2,13 @@
 
 This project uses a Swin Transformer (`swin_tiny_patch4_window7_224`) to perform 100-class image classification on the Butterfly-100 dataset.
 
+![Overall architecture](img/overall.svg)
+
+|Split|Top-1 Acc. (%)|Top-3 Acc. (%)|
+|:-|:-:|:-:|
+|Validation|94.60|99.60|
+|Test|96.00|99.00|
+
 ## Quick Start
 
 1) Install dependencies
@@ -134,6 +141,8 @@ Extra console output:
 - A text summary of the confusion matrix for the top-N classes (default N=10)
 - Top 10 most common misclassification pairs
 
+![Test confusion matrix](img/test_confusion_matrix.png)
+
 ## Dataset Inspection & Distribution (Optional)
 
 1) Generate class counts, histograms, and random sample grids for train/valid/test:
@@ -141,12 +150,14 @@ Extra console output:
 ```bash
 python script/check_dataset.py --root datasets/Butterfly-100 --output-dir output/dataset
 ```
+![Test samples](img/test_sample_grid.png)
 
 2) Plot a bar chart for all training classes and save a short textual summary:
 
 ```bash
 python script/data_distribute.py --root datasets/Butterfly-100
 ```
+![Data distribution](img/train_all_classes_bar.png)
 
 Outputs are written to `output/dataset/`.
 

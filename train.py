@@ -1,12 +1,12 @@
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import numpy as np
+import pandas as pd
 import os
 from pathlib import Path
 
 import torch
 import torchvision
 from torchvision import datasets
-from torchvision import transforms as T # for simplifying the transforms
+from torchvision import transforms as T
 from torch import nn, optim
 from torch.nn import functional as F
 from torch.utils.data import DataLoader, sampler, random_split
