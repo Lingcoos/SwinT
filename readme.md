@@ -1,4 +1,4 @@
-# Butterfly Classification with Swin Transformer (Swin-T)
+# Butterflies and Moths Classification with Swin Transformer
 
 This project uses a Swin Transformer (`swin_tiny_patch4_window7_224`) to perform 100-class image classification on the Butterfly-100 dataset.
 
