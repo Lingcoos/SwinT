@@ -9,6 +9,9 @@ This project uses a Swin Transformer (`swin_tiny_patch4_window7_224`) to perform
 |Validation|94.60|99.60|
 |Test|96.00|99.00|
 
+Note on reproducibility:
+- It is normal to see small Top-1/Top-3 differences across different machines or environments (e.g., different GPU/CUDA/cuDNN, `torch`/`torchvision`/`timm`/`pillow` versions, image resize implementation details, and non-deterministic GPU kernels). Treat the numbers above as reference results for the author’s environment.
+
 ## Quick Start
 
 1) Install dependencies
@@ -166,7 +169,7 @@ Outputs are written to `output/dataset/`.
 - Training/inference is slow: prefer running on GPU (`cuda`).
 - First run stuck downloading: `torch.hub.load` needs internet access to fetch the hub repository/weights.
 - `ModuleNotFoundError: sklearn`: install `scikit-learn`.
-
+- Top-1/Top-3 differs from another machine: small differences can happen due to different GPU/CUDA/cuDNN and library versions, as well as resize/interpolation and other implementation details.
 
 
 
